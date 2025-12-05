@@ -1,0 +1,21 @@
+name: GitHub Actions - Filtrando por type
+run-name: Running ${{ github.event.name }}
+on:
+  pull_request:
+    types: 
+    - opened
+    - closed
+    - reopened
+    branches:
+    - main
+    paths:
+    - '**/*.md'
+
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Comentário
+      run: |
+        echo "Comentário pull_request WORKFLOW - Type"
+        echo "Executado!"
