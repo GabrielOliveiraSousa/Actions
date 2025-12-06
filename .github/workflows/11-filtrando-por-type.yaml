@@ -10,7 +10,7 @@ on:
     - main
     - develop
     paths:
-    - '**/*.md'
+    - '**.md'
 
 jobs:
   on-push:
