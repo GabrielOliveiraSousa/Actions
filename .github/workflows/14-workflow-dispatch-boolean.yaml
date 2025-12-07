@@ -3,7 +3,7 @@ run-name: Running - ${{ github.event_name }}
 on:
   workflow_dispatch:
     inputs:
-      resposta: true
+      resposta:
         description: Esta foi a melhor matéria que você teve?
         type: boolean
 jobs:
@@ -13,4 +13,4 @@ jobs:
       - name: Comentário
         run: |
           echo "Comentário WORKFLOW DISPATCH - Boleano"
-          echo "Melhor matéria que cursei: ${{ inputs.resposta }}!"
+          echo "Melhor matéria que cursei: ${{ inputs.resposta }} !"
