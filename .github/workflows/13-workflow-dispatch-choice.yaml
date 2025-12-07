@@ -18,5 +18,5 @@ jobs:
     steps:
       - name: Comentário
         run: |
-          echo "Comentário WORKFLOW DISPATCH choice
+          echo "Comentário WORKFLOW DISPATCH choice"
           echo "Selecionado - ${{inputs.tags}}!"
